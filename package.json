@@ -1,0 +1,26 @@
+{
+  "name": "nefertours",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node node_modules/sass/sass.js sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juwayyed/NeferTours.git"
+  },
+  "keywords": [],
+  "author": "Juwayyed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juwayyed/NeferTours/issues"
+  },
+  "homepage": "https://github.com/Juwayyed/NeferTours#readme",
+  "description": "Landing Page for NeferTours",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  },
+  "dependencies": {
+    "sass.js": "^0.11.1"
+  }
+}
