@@ -2,6 +2,8 @@
 @use "../base/animations" as *;
 
 .btn {
+    font-size: 16px;
+    font-weight: 700;
     &:link, &:visited {
         text-transform: uppercase;
         text-decoration: none;
