@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as *;
+
+.about-section {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0;
+    margin-top: -20vh;
+}
+
+.features-section {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.80), rgba($color-primary-dark, 0.80)), url(../../img/net-4.webp);
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    & > * {
+      transform: skewY(7deg);
+    }
+}
+
+.tours-section {
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 15rem 0;
+    margin-top: -10rem;
+}
+
+.stories-section {
+    padding: 15rem 0;
+    position: relative;
+}
+
+.booking-section {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.80), rgba($color-primary-dark, 0.80)); 
+}
+
+.booking {
+    background-image: linear-gradient(105deg, rgba($color-white, 0.8) 0%, rgba($color-white, 0.8) 50%, transparent 50%), url(../../img/net-10.webp);
+    background-size: 100%;
+    height: 50rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+
+    &__form {
+        width: 50%;
+        padding: 6rem
+    }
+}

@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as *;
+
+.comp {
+    position: relative;
+
+    &__photo {
+        position: absolute;
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+        border-radius: 20px;
+        transition: all 0.2;
+        outline-offset: 2rem;
+        -webkit-filter: sepia(100%);
+        filter: sepia(90%);
+
+        &--p1 {
+            left: 0;
+            top: -2rem;
+        }
+
+        &--p2 {
+            right: 0;
+            top: 2rem;
+        }
+
+        &--p3 {
+            left: 20%;
+            top: 10rem;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, 0.4);
+            z-index: 20;
+            -webkit-filter: sepia(0);
+            filter: sepia(0);
+            transition: all 0.8s ease-in-out;
+            }
+        }
+
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(0.95) translateY(-0.5rem);
+    }
+}
